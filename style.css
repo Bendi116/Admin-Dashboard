@@ -102,7 +102,59 @@ input[type="text"]{
     gap: 3rem;
 }
 
-  .main{
-    background-color: rgb(193, 198, 199);
-    grid-column: 2/3;
-  }
+.main{
+  background-color: rgb(193, 198, 199);
+  grid-column: 2/3;
+}
+
+
+.main-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 2rem;
+}
+.projects-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(600px, 1fr));
+  grid-template-rows: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+}
+.projects{
+  grid-column: 1;
+}
+.project-item{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border-left:2pc solid yellow ;
+}
+
+
+.announcements, .trending{
+  grid-column: -1;
+  color: black;
+}
+.trending{
+  grid-row: 2;
+}
+.announcements-container{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.trending-container{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.left-side{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
