@@ -32,16 +32,18 @@ a{
 /* Main css */
   
   body{
-    height: 100vh;
-    width: 100vw;
+    padding: 0 10rem;
 
     font-size: 40px;
     color: white;
+    background-color: rgb(161, 160, 160);
+  }
+  .i{
+    width: inherit;
+    height: inherit;
   }
 
-
   .wrapper{
-    height: inherit;
 
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -59,18 +61,23 @@ a{
     height: 100%;
     display:grid;
     grid-template-rows: 1fr 2fr;
-    padding: 2rem 3rem;
+    padding: 2rem 0 2rem 3rem;
   }
   .up-content{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     justify-items: start;
-
-  
+    
   }
+.interaction > button{
+  background-color: rgb(61, 145, 179);
+  color: #fff;
+  border-radius: 10px;
+}
 
 .infos{
   justify-self: center;
+  
 }
 
 
@@ -112,6 +119,7 @@ input[type="text"]{
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 2rem;
+  gap: 40px;
 }
 .projects-container{
   margin-top: 10px;
@@ -134,10 +142,14 @@ input[type="text"]{
 .announcements, .trending{
   grid-column: -1;
   color: black;
+  height: fit-content;
+  width: 36rem;
 }
+
 .trending{
   grid-row: 2;
 }
+
 .announcements-container{
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -145,7 +157,14 @@ input[type="text"]{
   
   margin-left: 10px;
   border-radius: 10px;
+  padding: 2rem;
 }
+
+.middle{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 .trending-container{
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -157,4 +176,6 @@ input[type="text"]{
 .left-side{
   display: grid;
   grid-template-rows: 1fr 1fr;
+  height: fit-content;
+  width: fit-content;
 }
