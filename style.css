@@ -45,14 +45,48 @@ a{
 
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-rows: 1fr 5fr;
   }
 
   .header{
     background-color: white;
     grid-column: 2/3;
     grid-row: 1/2;
+
+    color:black;
   }
+  .header-container{
+    height: 100%;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 2rem 3rem;
+  }
+  .up-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+
+  
+  }
+
+.infos{
+  justify-self: center;
+}
+
+
+  .down-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: end;
+  }
+input[type="text"]{
+    border-radius: 30px;
+    width: 40rem;
+    background-color: rgb(215, 215, 215);
+    border: none;
+  }
+
 
   .sidebar{
     background-color: rgb(61, 145, 179);
@@ -69,6 +103,6 @@ a{
 }
 
   .main{
-    background-color: rgb(185, 185, 172);
+    background-color: rgb(193, 198, 199);
     grid-column: 2/3;
   }
