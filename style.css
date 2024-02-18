@@ -182,8 +182,25 @@ input[type="text"]{
   border-left:2pc solid var(--poke-red) ;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
+  padding: 1rem;
+  background-color: rgb(227, 219, 233);
+  position: relative;
 }
-
+/* .pok-1{
+  background-image: url(img/gengar.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+} */
+.gengar{
+  width: 16rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+}
 
 .announcements, .trending{
   grid-column: -1;
