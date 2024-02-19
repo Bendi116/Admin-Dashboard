@@ -193,7 +193,7 @@ input[type="text"]{
   background-repeat: no-repeat;
   
 } */
-.gengar{
+.gengar, .charizard, .butterfree, .gyarados, .mew, .psyduck{
   width: 16rem;
   height: auto;
   position: absolute;
@@ -201,7 +201,19 @@ input[type="text"]{
   right: 0;
   opacity: 0.6;
 }
-
+.charizard{
+  top: 2rem;
+  width: 18rem;
+  height: auto;
+}
+.mew, .psyduck{
+  width: 13rem;
+  height: auto;
+}
+.mew{
+  top: 1rem;
+  right: 1rem;
+}
 .announcements, .trending{
   grid-column: -1;
   color: black;
