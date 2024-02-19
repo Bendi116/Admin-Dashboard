@@ -216,6 +216,9 @@ input[type="text"]:focus{
   background-color: rgb(227, 219, 233);
   position: relative;
 }
+.project-item:hover{
+  box-shadow: var(--main-shadow);
+}
 /* .pok-1{
   background-image: url(img/gengar.png);
   background-position: right;
