@@ -37,7 +37,8 @@ a{
 body{
   padding: 0 10rem;
 
-  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 36px;
   color: white;
   background-color: rgb(161, 160, 160);
 }
