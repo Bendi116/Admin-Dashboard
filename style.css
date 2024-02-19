@@ -283,21 +283,34 @@ input[type="text"]:focus{
 
 .announcements-container >div:hover{
   box-shadow: var(--main-shadow);
-  background: linear-gradient(var(--poke-red),rgb(255, 255, 255) 90%);
+  background: var(--poke-red);
   border-radius: 10px;
 }
 
 .trending-container{
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 4fr);
   background-color: white;
   
   margin-left: 10px;
   border-radius: 10px;
+  padding: 1.5rem;
+  gap: 1rem;
 }
+.trending-container >div:hover{
+  box-shadow: var(--main-shadow);
+  background: var(--poke-red);
+  border-radius: 10px;
+}
+.trending-item{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
 .left-side{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(400px, 1fr));
   height: fit-content;
   width: fit-content;
 }
